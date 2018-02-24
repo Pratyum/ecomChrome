@@ -21,7 +21,9 @@ function DOMtoString(document_root) {
                     dimensions = value.innerText.split()[0];
                 }
             });
+            weight = weight.slice(0,weight.length-3);
             var price = parsedHTML.getElementsByClassName('_1vC4OE _37U4_g')[0].innerText;
+            price = price.slice(1, price.length).replace(",", "");
             var imageLink = value.children[0].src;
             var item = {name:node[index+1].innerText, weight:weight, dimensions:dimensions, price:price, url:imageLink};
             endJson.data.push(item);
