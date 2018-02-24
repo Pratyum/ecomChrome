@@ -48,7 +48,7 @@ document.getElementById('sendOrder').addEventListener("click", sendOrder);
 
 function sendOrder(){
   var r = new XMLHttpRequest();
-  r.open("GET", "http://154e1d21.ngrok.io/create_order?data="+JSON.stringify(json_data)+"&address=637658");
+  r.open("GET", "http://154e1d21.ngrok.io/create_order?data="+JSON.stringify(json_data)+"&address=189677", false);
   r.send();
   window.location = 'thanks.html';
 }

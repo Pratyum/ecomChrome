@@ -54,3 +54,10 @@ ul{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+#tick-img{
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-height: 50px;
+}
