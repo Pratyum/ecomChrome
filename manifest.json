@@ -6,5 +6,6 @@
   "browser_action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["tabs", "<all_urls>"]
+  "permissions": ["tabs", "<all_urls>"],
+  "icons": { "64": "img/icon.png" }
 }

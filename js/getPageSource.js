@@ -22,12 +22,11 @@ function DOMtoString(document_root) {
                 }
             });
             var price = parsedHTML.getElementsByClassName('_1vC4OE _37U4_g')[0].innerText;
-            var item = {name:node[index+1].innerText,weight:weight,dimensions:dimensions,price:price};
+            var imageLink = value.children[0].src;
+            var item = {name:node[index+1].innerText, weight:weight, dimensions:dimensions, price:price, url:imageLink};
             endJson.data.push(item);
-            html += '<li class="list-group-item">' + value.outerHTML + node[index+1].innerText +' weight=' + weight + ' dimensions= ' + dimensions + ' price='+ price +'</li>';
         }
     });
-    endJson.html = html;
     return endJson;
 }
 
